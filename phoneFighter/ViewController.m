@@ -36,6 +36,8 @@
     
     //((2 x level + 10) / 250) x (attack/defense)) = damage
     
+    float test1 = ((2 * level + 10) / 250);
+    float test2 = (attack / defense);
     
     float damage = ((2 * level + 10) / 250) * (attack / defense) * 100;
     
