@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *defenseText;
 @property (weak, nonatomic) IBOutlet UILabel *damageLabel;
 @property (weak, nonatomic) IBOutlet UIButton *runAttackButton;
+@property (weak, nonatomic) IBOutlet UISwitch *randomDamageSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *critsSwitch;
 
 @end
 
@@ -30,6 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)runAttackPressed:(id)sender {
+    int levelInt = [self.levelText.text integerValue];
     float level = [self.levelText.text floatValue];
     float attack = [self.attackText.text floatValue];
     float defense = [self.defenseText.text floatValue];
@@ -41,7 +44,16 @@
     
     float damage = ((2 * level + 10) / 250) * (attack / defense) * 100;
     
-    [self.damageLabel setText: @(damage).stringValue];
+     if([self.randomDamageSwitch isOn]) {
+        int random = 1 + arc4random() % (levelInt + 1 - 1);
+        damage += random;
+    }
+    if([self.critsSwitch isOn]) {
+        damage = damage * 1.5;
+    }
+    int damageInt = (int) damage;
+    //NSString *damageString = [NSString stringWithFormat:@"%f", damage];
+    [self.damageLabel setText: [NSString stringWithFormat:@"%i", damageInt]];
 }
 
 - (IBAction)resetValues:(id)sender {

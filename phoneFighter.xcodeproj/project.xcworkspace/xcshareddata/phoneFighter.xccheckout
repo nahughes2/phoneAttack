@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>66B52E83-F03D-4CEA-ABF3-11AAF7727D3C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>phoneFighter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E3E37AB7220820DA1DBB81FD42DB1D68C9D19276</key>
+		<string>https://github.com/nahughes2/phoneAttack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>phoneFighter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E3E37AB7220820DA1DBB81FD42DB1D68C9D19276</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nahughes2/phoneAttack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E3E37AB7220820DA1DBB81FD42DB1D68C9D19276</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E3E37AB7220820DA1DBB81FD42DB1D68C9D19276</string>
+			<key>IDESourceControlWCCName</key>
+			<string>phoneFighter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
